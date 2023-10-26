@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr. Samuvel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      line-height: 150%;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background-color: #e9e9e9;
+    }
+
+    .header h1 {
+      color: #222222;
+      font-size: 30px;
+      font-family: 'Pacifico', cursive;
+    }
+
+    .header .social a {
+      padding: 0 5px;
+      color: #222222;
+    }
+
+    .left {
+      float: left;
+      width: 180px;
+      margin: 0;
+      padding: 1em;
+    }
+
+    .content {
+      margin-left: 190px;
+      border-left: 1px solid #d4d4d4;
+      padding: 1em;
+      overflow: hidden;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    li a.active {
+      background-color: #0c7aaa;
+      color: white;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #29292a;
+      color: white;
+    }
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      margin: 30px 0;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      padding: 8px;
+    }
+
+    tr:nth-child(1) {
+      background-color: #0c7aaa;
+      color: white;
+    }
+
+    tr td i.fas {
+      display: block;
+      font-size: 35px;
+      text-align: center;
+    }
+
+    .footer {
+      padding: 55px 20px;
+      background-color: #2e3550;
+      color: white;
+      text-align: center;
+    }
+
+    .CV {
+      border: none;
+      border-radius: 10%;
+      color: white;
+      background-color: #0c7aaa;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Mr. Samuvel</h1>
+      <div class="social">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+      </div>
+    </header>
+    <aside class="left">
+      <img src="Picture1.jpg" width="160px" />
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">Objective</a></li>
+        <li><a href="#contact">Skills</a></li>
+        <li><a class="about">Resume</a></li>
+      </ul>
+      <p>“Design is not just what it looks like and feels like. Design is how it works."<br>- Steve Jobs</p>
+    </aside>
+    <main class="content">
+      <div class="about">
+        <h2>About Me</h2>
+        <p>A highly motivated programmer and designer with excellent self-learning capabilities, a passion for development and creative eye for design. Quick to adapt to new technologies and produce high-quality results. Aiming for excellence in every project, using innovative approaches and dedication to ensure outstanding results.</p>
+        <h2>Position</h2>
+        <p>Student-Freelancer</p>
+        <hr><br>
+        <h2>How Can I Help You?</h2>
+      </div>
+      
+      <table>
+        <tr>
+          <th>SKILL 1</th>
+          <th>SKILL 2</th>
+          <th>SKILL 3</th>
+        </tr>
+        <tr>
+          <td>Figma</td>
+          <td>Adobe Photoshop</td>
+          <td>Adobe Illustrator</td>
+        </tr>
+        <tr>
+      </table>
+      <div class="cv">
+        <h2>Resume</h2>
+        <button class="CV" onclick="window.location.href='Resume.pdf'">CV Resume</button>
+      </div>
+    </main>
+    
+    <footer class="footer">&copy; Copyright Mr. Samuvel</footer>
+  </div>
+</body>
+
+</html>
